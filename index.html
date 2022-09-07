@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.31/sweetalert2.css" integrity="sha512-e+TwvhjDvKqpzQLJ7zmtqqz+5jF9uIOa+5s1cishBRfmapg7mqcEzEl44ufb04BXOsEbccjHK9V0IVukORmO8w==" crossorigin="anonymous" referrerpolicy="no-referrer" />">
+</head>
+<body>
+    <div class="w-50 m-auto">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">courceName</label>
+              <input type="text" class="form-control"  id="name_cou" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <div id="nameAlert" class="alert-danger alert">Please start name capital latter</div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label">cat</label>
+              <input type="text" class="form-control"id="cat_cou" id="exampleInputPassword1">
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">price</label>
+                <input type="number" class="form-control" id="price_cou" id="exampleInputPassword1">
+              </div>
+              
+            <button disabled type="submit" class="btn btn-outline-primary" id="click">add</button>
+            <div class="mt-3">
+              <input type="search" class="form-control" onkeydown="search(this.value)" placeholder="search" id="searchBtn">
+            </div>
+            <table class="table m-3 table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">courceName</th>
+                    <th scope="col">cat</th>
+                    <th scope="col">price</th>
+                    <th scope="col">Action</th>
+
+                  </tr>
+                </thead>
+                <tbody id="demo">
+                  
+                </tbody>
+              </table>
+    </div>
+    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.31/sweetalert2.min.js" integrity="sha512-aBqjkT2/vsvX+aKE8T8453SvYzNIql9Dinj960TBQdV/rFsxZvUL6NRlZX6L3mlsW04PxnZGZ8sIaITJhgy3bQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.4.31/sweetalert2.all.min.js" integrity="sha512-nPHescbdU8D2Oti9KTcm/plNgELaWrzn1wWvlXyWHWq+wexu3MbcHpf+yDazEp+i+dXRu7UHuN2oSFBU8xQILw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script></body>
+</html>
